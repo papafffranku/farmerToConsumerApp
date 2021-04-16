@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.farmertoconsumer">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.NoActionBar">
+        <activity android:name="com.example.farmertoconsumer.farmerProfile"></activity>
+        <activity android:name="com.example.farmertoconsumer.farmerActivity" />
+        <activity android:name="com.example.farmertoconsumer.cartactivity" />
+        <activity android:name="com.example.farmertoconsumer.productpage" />
+        <activity android:name="com.example.farmertoconsumer.profile" />
+        <activity android:name="com.example.farmertoconsumer.SignUpActivity" />
+        <activity android:name="com.example.farmertoconsumer.DashboardActivity" />
+        <activity android:name="com.example.farmertoconsumer.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

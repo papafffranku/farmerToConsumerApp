@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="420dp">
+
+    <ImageView
+        android:id="@+id/image_post_image"
+        android:layout_width="300dp"
+        android:layout_height="192dp"
+        android:foreground="@drawable/some_foreground"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.125" />
+
+    <View
+        android:id="@+id/image_title_cover"
+        android:layout_width="284dp"
+        android:layout_height="39dp"
+        android:background="@drawable/title_back"
+        app:layout_constraintBottom_toBottomOf="@+id/image_post_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/image_post_title"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/image_post_title"
+        android:layout_width="285dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="9dp"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        android:text="TextView"
+        android:textColor="@color/white"
+        android:textSize="19sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.452"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.47" />
+
+    <TextView
+        android:id="@+id/desc_post_desc"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:fontFamily="sans-serif-medium"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_post_image"
+        app:layout_constraintVertical_bias="0.202" />
+
+    <Button
+        android:id="@+id/price"
+        android:layout_width="101dp"
+        android:layout_height="39dp"
+        android:background="@drawable/farmersigninfinal"
+        android:text="Price"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        android:fontFamily="sans-serif-medium"
+        app:layout_constraintBottom_toTopOf="@+id/divider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/desc_post_desc" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/desc_post_desc"
+        app:layout_constraintVertical_bias="0.993" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "353201154650",
+    "firebase_url": "https://kill-me-2e88a-default-rtdb.firebaseio.com",
+    "project_id": "kill-me-2e88a",
+    "storage_bucket": "kill-me-2e88a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:353201154650:android:bf96b275c0a366d773c663",
+        "android_client_info": {
+          "package_name": "com.example.killme"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "353201154650-v3nki32774a0i12nkaaecgdkk1fjkut5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDG5Ncihtlb9XTxN_TRQLKiwxYCFz6KZI8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "353201154650-v3nki32774a0i12nkaaecgdkk1fjkut5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

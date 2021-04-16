@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".productpage"
+    android:background="@drawable/appbackground">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/topgrad"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.001" />
+
+    <TextView
+        android:id="@+id/hehe4"
+        android:layout_width="wrap_content"
+        android:layout_height="33dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="9dp"
+        android:layout_marginRight="11dp"
+        android:paddingLeft="6dp"
+        android:paddingRight="20dp"
+        android:text="Vikram"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.981"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/image_post_image"
+        android:layout_width="300dp"
+        android:layout_height="192dp"
+        android:foreground="@drawable/some_foreground"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.125" />
+
+    <TextView
+        android:id="@+id/image_post_title"
+        android:layout_width="284dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="9dp"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        android:text="TextView"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.457"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.422" />
+
+    <TextView
+        android:id="@+id/desc_post_desc"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:fontFamily="sans-serif-medium"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_post_image"
+        app:layout_constraintVertical_bias="0.202" />
+
+    <Button
+        android:id="@+id/pprice"
+        android:layout_width="101dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/transparent_bg_bordered_button_black"
+        android:text="Price"
+        android:fontFamily="sans-serif-medium"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toTopOf="@+id/divider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/desc_post_desc" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/addtocart"
+        app:layout_constraintEnd_toEndOf="@+id/addtocart"
+        app:layout_constraintHorizontal_bias="0.906"
+        app:layout_constraintStart_toStartOf="@+id/addtocart"
+        app:layout_constraintTop_toTopOf="@+id/addtocart"
+        app:srcCompat="@drawable/arrow" />
+
+    <Button
+        android:id="@+id/addtocart"
+        android:layout_width="216dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="116dp"
+        android:background="@drawable/transparent_bg_bordered_button_black"
+        android:fontFamily="sans-serif-medium"
+        android:text="add to cart"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toTopOf="@+id/divider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pprice" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="1dp"
+        android:background="#0d324d"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/firestore_list"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/firestore_list"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:menu="@menu/nav_menu">
+
+        <FrameLayout
+            android:id="@+id/fl_wrapper"
+            android:layout_width="405dp"
+            android:layout_height="51dp" />
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+    <EditText
+        android:id="@+id/please"
+        android:layout_width="222dp"
+        android:layout_height="28dp"
+        android:layout_marginBottom="38dp"
+        android:background="@drawable/edittextback"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        android:paddingLeft="10dp"
+        android:hint="Quantity"
+        app:layout_constraintBottom_toTopOf="@+id/addtocart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pprice"
+        app:layout_constraintVertical_bias="1.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
